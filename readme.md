@@ -13,3 +13,11 @@ All dependencies are listed in the ‘/env’ folder
 3. Pyshark
 4. Psutil
 5. Flask_Mail
+
+## Important notice:
+
+1. The /see route shows packets recieved at interface en0 (may need to be changed according to primary interface)
+2. Change email, password to match your needs (app.py)
+
+### Video:
+
