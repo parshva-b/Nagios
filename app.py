@@ -11,7 +11,7 @@ app.config.update(
 	MAIL_PORT=465,
 	MAIL_USE_SSL=True,
 	MAIL_USERNAME = 'parshva.barbhaya@somaiya.edu',
-	MAIL_PASSWORD = 'pwd'
+	MAIL_PASSWORD = 'ghostrider@gm'
 	)
 mail = Mail(app)
 
@@ -41,7 +41,7 @@ def deploy():
 		  recipients=["parshva.barbhaya@somaiya.edu"])
             msg.body = error           
             mail.send(msg)
-            string = 'Mail sent!'
+            string = 'Deployment successful!'
         except Exception as e:
             string = str(e)
     else:
@@ -51,7 +51,7 @@ def deploy():
 		  recipients=["parshva.barbhaya@somaiya.edu"])
             msg.body = 'No errors found\n Service dployed at '+(str(datetime.datetime.now()))
             mail.send(msg)
-            string = 'Mail sent!'
+            string = 'Deployment unsuccessful!!'
         except Exception as e:
             string = str(e)
         # return "Can be deployed"
