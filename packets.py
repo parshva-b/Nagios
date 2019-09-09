@@ -1,4 +1,4 @@
-import pyshark, json
+import pyshark, json, re
 
 def sniffer():
     cap = pyshark.LiveCapture(interface = 'en0')
@@ -6,7 +6,13 @@ def sniffer():
 
     smt = []
     for pkt in cap:
-        smt.append({'content' :str(pkt)})
+        smt.append(str(pkt))
 
-    # print (smt)
     return smt
+
+# if __name__ == '__main__':
+#     arr = sniffer()
+
+#     # print(type(arr))
+#     for x in arr:
+#         print (x)

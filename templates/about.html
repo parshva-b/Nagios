@@ -10,11 +10,13 @@
     <hr>
 </div>
 
-<ul class="list-group">
-    {% for item in items %}
-
-    <li class="list-group-item"> {{item.content}} </li>
-
-    {% endfor %}
-</ul>
+<table class="table table-bordered">
+    <tbody>
+        {% for item in items %}
+        <tr>
+            <td>{{item}}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
 {% endblock %}
