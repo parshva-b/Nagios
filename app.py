@@ -11,7 +11,7 @@ app.config.update(
 	MAIL_PORT=465,
 	MAIL_USE_SSL=True,
 	MAIL_USERNAME = 'parshva.barbhaya@somaiya.edu',
-	MAIL_PASSWORD = 'ghostrider@gm'
+	MAIL_PASSWORD = 'pwd'
 	)
 mail = Mail(app)
 
