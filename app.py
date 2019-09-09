@@ -41,7 +41,7 @@ def deploy():
 		  recipients=["parshva.barbhaya@somaiya.edu"])
             msg.body = error           
             mail.send(msg)
-            string = 'Deployment successful!'
+            string = 'Deployment unsuccessful!'
         except Exception as e:
             string = str(e)
     else:
@@ -51,7 +51,7 @@ def deploy():
 		  recipients=["parshva.barbhaya@somaiya.edu"])
             msg.body = 'No errors found\n Service dployed at '+(str(datetime.datetime.now()))
             mail.send(msg)
-            string = 'Deployment unsuccessful!!'
+            string = 'Deployment successful!!'
         except Exception as e:
             string = str(e)
         # return "Can be deployed"
